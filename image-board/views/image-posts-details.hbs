@@ -1,0 +1,30 @@
+
+<h3>Modify...{{imageposts.title}}!</h3>
+
+<form method="POST" action="/image-posts-delete/{{imageposts.slug}}">
+{{#each imageposts}}
+	
+	{{#each images}}
+		{{#if this.caption}}
+			<input type="checkbox" name="deletePics" value="{{this._id}}"> {{this.caption}}<br>
+			<img src="{{this.url}}" style="width: 200px"><br><br>
+		{{/if}}
+	{{/each}}
+
+{{/each}}
+<input type="submit" value="Submit">
+</form>
+
+<br>
+<form method="POST" action="/image-posts-add/{{imageposts.slug}}"> 
+
+	Image URL: <input type="text" name="url">, Caption: <input type="text" name="caption"><br>
+	<br><button type="submit">Add Another</button>
+
+</form>
+
+<br>
+<a href="/image-posts">Return to Home</a>
+
+
+

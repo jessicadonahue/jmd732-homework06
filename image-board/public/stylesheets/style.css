@@ -1,0 +1,20 @@
+
+body {
+  padding: 50px;
+  font-family: "Britannic Bold", Times, serif;
+  color: white;
+  background-color: black;
+  text-align: center;
+  width: 75%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+h1 {
+	color: #00B7FF;
+
+}
+
+a {
+  color: #00B7FF;
+}
